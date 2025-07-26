@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <style>
+        body{
+            text-align:center; 
+              margin-top:150px;
+        }
+        .container{
+         background-color:lightgreen;
+        box-sizing: content-box;
+         max-width:400px;
+         margin-left:550px;
+         padding:20px;
+           
+        }
+        pre{
+            font-family:'Times New Roman', Times, serif;
+        }
+        
+    </style>
+</head>
+<body>
+  <nav>
+        
+    <form action="restaurant.html"onsubmit=" return evalidate()"><div class="container">
+     
+    <h1>REGISTRATION</h1>
+    <pre>
+    Employee Id:<input type="text" name="empid" placeholder="Enter ID"required><br><br>
+          Name:<input type="text" name="name" placeholder="Enter Name" required><br><br>
+          Email:<input type="email" name="email" placeholder="Enter Email" id="email" required><br><br>
+Department:<select id="dept" name="dept" placeholder="Select Department" required>
+        <option value="HR">HR</option>
+        <option value="IT">IT</option>
+        <option value="Finance">Finance</option>
+        <option value="Operations">Operations</option>
+    </select><br><br>
+         Password:<input type="password" name="pass" placeholder="Enter Password" id="pass"required><br><br>
+        <button>Register</button></pre>
+         </div></form>
+         <script type="text/javascript" src="alert.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<html><head>
+    <title>ui pages</title>
+</head>
+<style>
+    .container{
+    margin:0 auto;
+    background:hsl(154,25,37%);
+    box-sizing:content-box;}
+    nav {
+      height: 25px; 
+      margin-top: 20px; 
+    }
+ @media screen and (min-width:320px){
+    .container{
+            width:30dvi;
+            padding-bottom:10px 10px; padding-left: 10px 10px;
+            background-color:lightblue;}
+    body{
+        background-color:grey;
+        background-image:url(hospital14.jpg);
+        background-size:cover;
+    }}
+    @media screen and (min-width:768px) and (max-width:1024px){
+        .container{
+            width:30dvi;
+            padding-bottom:10px 10px; padding-left: 10px 10px;
+            background-color:lightblue;}
+    body{
+        background-color:gold;background-image:url(hospital4.jpg);
+        background-size:cover;
+    }}
+    @media screen and (min-width:1224px){
+        .container{
+            width:30dvi;
+            padding-bottom:10px 10px; padding-left: 10px 10px;
+            background-color:lightblue;}
+    body{
+        background-color:darkolivegreen;background-image:url(hospital4.jpg);
+        background-size:cover;
+    }}
+    @media screen and (min-width:1824px){
+        .container{
+            width:30dvi;
+            padding-bottom:10px 10px; padding-left: 10px 10px;
+            background-color:lightblue;}
+    body{
+        background-color:indianred;background-image:url(hospital4.jpg);
+        background-size:cover;}}
+    body{
+    background-color:rgb(30, 101, 60);
+    color:chocolate;
+    background-image:url(hospital4.jpg);
+    background-size:cover;}h1{text-align:center;}
+    h2{text-align:start;}
+    p{
+        text-align:right;
+    }
+    body{
+                background-image: url(hospital4.jpg);
+                background-size:cover;
+            }
+            nav{
+                background-color:rgba(234,45,23);
+                color:aquamarine;
+                padding:10px;
+            }
+            nav ul{
+                list-style-type: none;
+                margin:0;
+                padding:0;
+            }
+            nav ul li{
+                display:inline;
+                margin-right: 20px;
+
+            }
+            nav ul li a{
+                color:azure;
+                text-decoration:none;
+
+            }
+            nav ul li a:hover{
+                text-decoration:underline;}
+            p{
+                text-align:center;
+            }
+            h1{
+                text-shadow: 10px 10px 1opx rgb(111, 128, 0);
+            }.container{
+                background-color:rgba(119, 19, 19, 0.5);
+                padding:30px;
+                border-radius:5px;
+                box-shadow:0 0 20px rgba(0,0,0,0.5);
+            }
+            .container h2{
+                color:white;
+                margin-bottom:20px;
+            
+                text-align:center;
+            }
+            .container label{
+display:block;
+margin-bottom:5px;
+
+color:gray;
+            }
+            .container input{
+                width:50%;
+                padding:15px;
+                margin-bottom:15px;
+               
+border:1px solid grey;
+border-radius:3px;
+background-color:black;
+color:white;
+            }
+            .container input:focus{
+border-color:cyan;
+box-shadow:0 0 8px cyan;
+outline:none;
+            }
+            .container button{
+                width:100%;
+                padding:10px;
+                background-color:black;
+                color:#fff;
+                border:none;
+                border-radius:2px;
+                cursor:pointer;
+                transition:all 0.3s  ease;
+            }
+            .container button:hover{
+                background-color:#00ff00;
+                box-shadow:0 0 8px #00ff00;
+
+            }
+            .container button:focus{
+                outline-width:0ch;
+
+            }
+            .container p{
+                color:black;
+                text-align:center;
+            }
+            .container{
+                position:absolute;
+                top:50%;
+                left:50%;
+transform:translate(-50%,-50%);}
+            form{
+                width:100%;
+            }
+            
+            </style><script>
+                function loginValidation(){
+                var uname=document.myform.username.value;
+                var password=document.myform.password.value;
+                if(uname==null || uname==""){
+                    alert("username cant't be empty")
+                    return false;
+                }
+                else if(password.length<6){
+                    alert("password can contain 6 lettes")
+                    return false;
+                 }
+                 return true
+                }
+                function fpassword(){
+                    var uname=document.fpass.username.value;
+                    var password=document.fpass.password.value;
+                    var confirmpassword=document.fpass.confirmpassword.value;
+                    if(password!=confirmpassword){
+                        alert("password should not match");
+                        return false;
+                    }
+                    return true;
+                    
+                }
+                
+            </script>          
+
+    <body>
+        <nav>
+        <center>
+            <pre><a href="C:\Users\vyshn\OneDrive\Desktop\internship\restaurant.html">HOME</a>  <a href="C:\Users\vyshn\OneDrive\Desktop\internship\LOGIN.html">LOGIN</a>  <a href="C:\Users\vyshn\OneDrive\Desktop\internship\REGISTRATION.html">REGISTRATION</a>  <a href="C:\Users\vyshn\OneDrive\Desktop\internship\ABOUT US.html">ABOUT US</a>    <a href="C:\Users\vyshn\OneDrive\Desktop\internship\EMPLOYEES.html">EMPLOYEES</a>  <a href="C:\Users\vyshn\OneDrive\Desktop\internship\LEAVE.html">LEAVE</a></nav></pre>
+        </center>
+            <div class="container">
+                    <h1>Login</h1>
+
+    <form name="myform"action="restaurant.html" onsubmit="return loginValidation(this)">
+   <labe><h2>Username:<input type="text" name="username"placeholder="Enter username"autofocus></h2>
+    <h2>Password:<input type="password" name="password"placeholder="Enter password"></h2> </label> 
+    <p><a href="fpassword.html">forgot password</a>     
+  <h2> <input type="submit" value="submit"></h2></div></form></body>
+</html>

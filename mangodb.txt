@@ -1,0 +1,11 @@
+DataBase Types:
+1.relational database/sql
+2.document database/NoSQL
+key characterstics of mangodb:
+1.information about a document stored in a single place
+2.to retrieve data,we need not join operation hence retrievial is fast
+3.it can store unstructured data like videos and audios
+4.it can store huge amount of data
+5.we can perform operations like editing existing document,deleting document and inserting new documents
+6.it is storein .json and .bson
+

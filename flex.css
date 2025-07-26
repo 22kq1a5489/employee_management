@@ -1,0 +1,19 @@
+.flex-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    height:200px;
+    border:2px dashed #555;
+    margin:20px 20px 10px 5px;
+
+}
+.box{
+    background-color: #4CAF50;
+    color:white;
+    width:70px;
+    height:60px;
+    line-height:60px;
+    border-radius:6px;
+   text-align:center;
+}

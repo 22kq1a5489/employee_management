@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employee Leave Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <center>
+            <pre><a href="C:\Users\vyshn\OneDrive\Desktop\internship\restaurant.html">HOME</a>  <a href="C:\Users\vyshn\OneDrive\Desktop\internship\LOGIN.html">LOGIN</a>  <a href="C:\Users\vyshn\OneDrive\Desktop\internship\REGISTRATION.html">REGISTRATION</a>  <a href="C:\Users\vyshn\OneDrive\Desktop\internship\ABOUT US.html">ABOUT US</a>    <a href="C:\Users\vyshn\OneDrive\Desktop\internship\EMPLOYEES.html">EMPLOYEES</a>  <a href="C:\Users\vyshn\OneDrive\Desktop\internship\LEAVE.html">LEAVE</a></nav></pre>
+        </center>
+  <div class="container">
+    <h1>Employee Leave Management System</h1>
+
+    
+    <form id="leaveForm">
+      <label for="empName">Employee Name:</label>
+      <input type="text" id="empName" required>
+
+      <label for="empId">Employee ID:</label>
+      <input type="text" id="empId" required>
+
+      <label for="leaveType">Leave Type:</label>
+      <select id="leaveType" required>
+        <option value="">--Select--</option>
+        <option value="Sick Leave">Sick Leave</option>
+        <option value="Casual Leave">Casual Leave</option>
+        <option value="Annual Leave">Annual Leave</option>
+      </select>
+
+      <label for="fromDate">From:</label>
+      <input type="date" id="fromDate" required>
+
+      <label for="toDate">To:</label>
+      <input type="date" id="toDate" required>
+
+      <button type="submit">Submit Leave</button>
+    </form>
+
+    <!-- Leave Records -->
+    <h2>Leave Applications</h2>
+    <table id="leaveTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Leave Type</th>
+          <th>From</th>
+          <th>To</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Records will appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
